@@ -69,17 +69,17 @@ export default function Home() {
         setActiveSection={setActiveSection}
       />
       <main className="flex-1 ml-0 lg:ml-20">
-        <div className="md:max-w-5xl max-w-auto space-y-24 lg:space-y-0 mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="md:max-w-5xl max-w-auto space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-24 mx-auto py-8 sm:py-10 md:py-12 px-4 sm:px-6 lg:px-8">
           {/* Hero Section */}
           <section
             id="hero"
-            className="min-h-full overflow-hidden lg:min-h-[90vh] relative flex items-center justify-center py-20"
+            className="min-h-full overflow-hidden lg:min-h-[90vh] relative flex items-center justify-center py-12 sm:py-14 md:py-16 lg:py-20"
           >
             <div className="absolute max-w-[75%] opacity-50 right-0 top-[50%] -translate-y-[50%] z-0">
               <DropGrid />
             </div>
             <motion.div
-              className="max-w-4xl mx-auto space-y-8 z-20"
+              className="max-w-4xl mx-auto space-y-6 sm:space-y-8"
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -99,7 +99,7 @@ export default function Home() {
                   </span>
                 </h1>
               </motion.div>
-
+  
               <motion.div
                 className="text-sm sm:text-base font-medium text-muted-foreground max-w-2xl mx-auto leading-relaxed"
                 initial={{ y: 20, opacity: 0 }}
@@ -112,7 +112,7 @@ export default function Home() {
                 </span>{" "}
                 with expertise in front-end, back-end, and database technologies. Passionate about solving problems, learning new technologies, and building impactful projects.
               </motion.div>
-
+  
               <button
                 className="relative z-0 flex items-center gap-2 overflow-hidden rounded-lg border border-emerald-400/50 px-6 sm:px-8 py-2 font-semibold uppercase text-emerald-400 transition-all duration-500 before:absolute before:inset-0 before:-z-10 before:translate-x-[150%] before:translate-y-[150%] before:scale-[2.5] before:rounded-[100%] before:bg-emerald-600 before:transition-transform before:duration-1000 before:content-[''] hover:scale-105 hover:text-neutral-50 hover:before:translate-x-[0%] hover:before:translate-y-[0%] active:scale-95 neon-effect"
                 onClick={handleDownloadResume}
@@ -122,14 +122,14 @@ export default function Home() {
               </button>
             </motion.div>
           </section>
-
+  
           {/* About Section */}
           <section
             id="about"
-            className="min-h-full md:min-h-[90vh] flex flex-col justify-center py-16"
+            className="min-h-full md:min-h-[90vh] flex flex-col justify-center py-12 sm:py-14 md:py-16"
           >
             <SectionHeader title="About" subtitle="Get to know me better" />
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_300px] gap-6 sm:gap-8">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -147,7 +147,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-
+  
                 <div className="relative overflow-hidden w-fit">
                   <div style={{ opacity: 1, transform: "none" }}>
                     <p className="leading-relaxed text-muted-foreground">
@@ -155,7 +155,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-
+  
                 <div className="relative overflow-hidden w-fit">
                   <div style={{ opacity: 1, transform: "none" }}>
                     <p className="leading-relaxed text-muted-foreground">
@@ -163,7 +163,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-
+  
                 <div className="relative overflow-hidden w-fit">
                   <div style={{ opacity: 1, transform: "none" }}>
                     <p className="leading-relaxed text-muted-foreground">
@@ -171,7 +171,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-
+  
                 <div className="relative overflow-hidden w-fit">
                   <div style={{ opacity: 1, transform: "none" }}>
                     <div className="flex items-center gap-6">
@@ -196,7 +196,7 @@ export default function Home() {
                   </div>
                 </div>
               </motion.div>
-
+  
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -220,7 +220,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-
+  
                   <div className="relative overflow-hidden w-fit">
                     <div style={{ opacity: 1, transform: "none" }}>
                       <div>
@@ -242,11 +242,11 @@ export default function Home() {
               </motion.div>
             </div>
           </section>
-
+  
           {/* Projects Section */}
           <section
             id="projects"
-            className="min-h-full md:min-h-[90vh] flex flex-col justify-center py-16"
+            className="min-h-full md:min-h-[90vh] flex flex-col justify-center py-12 sm:py-14 md:py-16"
           >
             <SectionHeader title="Projects" subtitle="Some of my recent work" />
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-8">
@@ -268,7 +268,7 @@ export default function Home() {
                       transition={{ duration: 0.3 }}
                     />
                   </div>
-
+  
                   <div className="px-3 py-2">
                     <h3 className="text-sm sm:text-base font-semibold mb-2">
                       {project.title}
@@ -283,7 +283,7 @@ export default function Home() {
                         </span>
                       ))}
                     </div>
-
+  
                     <motion.p
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: 'auto', opacity: 1 }}
@@ -295,7 +295,7 @@ export default function Home() {
                         ? project.description
                         : `${project.description.slice(0, 100)}...`}
                     </motion.p>
-
+  
                     <div className="flex items-center justify-between">
                       <button
                         onClick={() => toggleProjectDescription(index)}
@@ -311,7 +311,7 @@ export default function Home() {
                           <ArrowRight className="w-3 h-3" />
                         </motion.span>
                       </button>
-
+  
                       <div className="flex gap-3">
                         <motion.a
                           href={project.github}
@@ -339,14 +339,12 @@ export default function Home() {
                 </motion.div>
               ))}
             </div>
-
-            
           </section>
-
+  
           {/* Experience Section */}
           <section
             id="experience"
-            className="min-h-full md:min-h-screen flex flex-col justify-center py-16"
+            className="min-h-full md:min-h-[90vh] flex flex-col justify-center py-12 sm:py-14 md:py-16"
           >
             <SectionHeader
               title="Experience"
@@ -363,11 +361,11 @@ export default function Home() {
                   transition={{ delay: index * 0.1 }}
                 >
                   <div className="absolute left-0 top-1.5 w-3 h-3 bg-emerald-500 rounded-full" />
-
+  
                   {index !== experiences.length && (
                     <div className="absolute left-[5px] top-5 w-px h-full bg-gray-300" />
                   )}
-
+  
                   <div className="ml-8">
                     <div className="">
                       <h3 className="text-sm font-semibold">{exp.role}</h3>
@@ -375,9 +373,9 @@ export default function Home() {
                         {exp.company} • {exp.period} • {exp.location}
                       </p>
                     </div>
-
+  
                     <p className="text-sm mt-2">{exp.description}</p>
-
+  
                     {exp.achievements && exp.achievements.length > 0 && (
                       <ul className="mt-2 space-y-1">
                         {exp.achievements.map((achievement, i) => (
@@ -387,7 +385,7 @@ export default function Home() {
                         ))}
                       </ul>
                     )}
-
+  
                     {exp.technologies && exp.technologies.length > 0 && (
                       <div className="mt-3 flex flex-wrap gap-2">
                         {exp.technologies.map((tech, i) => (
@@ -405,11 +403,11 @@ export default function Home() {
               ))}
             </div>
           </section>
-
+  
           {/* Certifications Section */}
           <section
             id="certifications"
-            className="min-h-full md:min-h-[90vh] flex flex-col justify-center py-16"
+            className="min-h-full md:min-h-[90vh] flex flex-col justify-center py-12 sm:py-14 md:py-16"
           >
             <SectionHeader
               title="Certifications"
@@ -428,9 +426,9 @@ export default function Home() {
                   <div className="absolute -top-4 -right-4 bg-emerald-500 text-white p-2 rounded-bl-lg rounded-tr-lg shadow-md transform rotate-12 group-hover:rotate-0 transition-transform z-20">
                     <Award className="h-5 w-5" />
                   </div>
-
+  
                   <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10" />
-
+  
                   <div className="relative z-10 space-y-3">
                     <h3 className="text-base font-semibold text-foreground">
                       {cert.title}
@@ -455,13 +453,13 @@ export default function Home() {
               ))}
             </div>
           </section>
-
+  
           {/* Contact Section */}
           <section
             id="contact"
-            className="min-h-full md:min-h-[90vh] py-16 flex items-center justify-center"
+            className="min-h-[90vh] flex flex-col justify-center py-12 sm:py-14 md:py-16"
           >
-            <div className="text-center space-y-8">
+            <div className="text-center space-y-6 sm:space-y-8">
               <motion.h2
                 className="text-3xl sm:text-4xl md:text-5xl font-bold"
                 initial={{ opacity: 0, y: 20 }}
