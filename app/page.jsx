@@ -368,18 +368,18 @@ export default function Home() {
   
                   <div className="ml-8">
                     <div className="">
-                      <h3 className="text-sm font-semibold">{exp.role}</h3>
-                      <p className="text-sm text-muted-foreground">
+                      <h3 className="text-lg font-semibold">{exp.role}</h3>
+                      <p className="text-base text-muted-foreground">
                         {exp.company} • {exp.period} • {exp.location}
                       </p>
                     </div>
   
-                    <p className="text-sm mt-2">{exp.description}</p>
+                    <p className="text-base mt-2">{exp.description}</p>
   
                     {exp.achievements && exp.achievements.length > 0 && (
                       <ul className="mt-2 space-y-1">
                         {exp.achievements.map((achievement, i) => (
-                          <li key={i} className="text-xs text-muted-foreground">
+                          <li key={i} className="text-base text-muted-foreground">
                             • {achievement}
                           </li>
                         ))}
