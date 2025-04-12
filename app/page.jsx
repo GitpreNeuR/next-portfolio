@@ -379,7 +379,7 @@ export default function Home() {
                     {exp.achievements && exp.achievements.length > 0 && (
                       <ul className="mt-2 space-y-1">
                         {exp.achievements.map((achievement, i) => (
-                          <li key={i} className="text-base text-muted-foreground">
+                          <li key={i} className="text-sm text-muted-foreground">
                             • {achievement}
                           </li>
                         ))}
