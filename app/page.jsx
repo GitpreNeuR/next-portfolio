@@ -391,7 +391,7 @@ export default function Home() {
                         {exp.technologies.map((tech, i) => (
                           <span
                             key={i}
-                            className="px-2 py-1 text-[11px] font-medium bg-emerald-500/10 text-emerald-500 rounded"
+                            className="px-2 py-1 text-sm font-medium bg-emerald-500/10 text-emerald-500 rounded"
                           >
                             {tech}
                           </span>
